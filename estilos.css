@@ -1,0 +1,627 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.animation1 {
+  animation: deslizar 1s ease-out both;
+}
+
+@keyframes deslizar {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animation2 {
+  animation: deslizar2 1s ease-out both;
+}
+
+@keyframes deslizar2 {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animation3 {
+  animation: deslizar3 1s ease-out both;
+}
+
+@keyframes deslizar3 {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.desaparecer {
+    position: absolute;
+    display: none;
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(72, 119, 60);
+    padding: 1em;
+    overflow: hidden;
+}
+
+header img {
+    width: 5em;
+}
+
+.div_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_1_main {
+    background-image: url(img/fondo\ 1.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.section_1_main h1 {
+    font-size: 4em;
+    text-align: start;
+}
+
+.caja_form {
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.section_2_main article {
+    background-color: rgb(72, 119, 60);
+    ;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.formulario input {
+    font-size: 1.6em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 10em;
+    margin-top: 1em;
+    height: 10em;
+}
+
+.formulario button {
+    font-size: 1.3em;
+    border-radius: 2em;
+    border: 1px solid white;
+}
+
+select {
+    height: 3em;
+}
+
+.parent div {
+    min-height: 30em;
+    
+}
+
+.div1 {
+    background-color: #6ac17d;
+}
+
+.div2 {
+    max-height: 40em;
+}
+
+.div2 img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.div3 {
+    text-align: center;
+    background-color: rgb(72, 119, 60);
+}
+
+.div3 h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 3em;
+    padding-top: 23%;
+}
+
+.div4 {
+    text-align: center;
+    background-color: #6ac17d;
+}
+
+.div6 {
+    background-color: #6ac17d;
+}
+
+#Titulo {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 20em;
+    padding-bottom: 2em;
+}
+
+.section_2_main {
+    background-color: beige;
+    padding-top: 5em;
+}
+
+.section_3_main {
+    background-color: beige;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section_3_main h2 {
+    font-weight: bold;
+    color: #6ac17d;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+}
+#cards img{
+    max-height: 500px;
+
+}
+
+#cards article {
+    background-color: #6ac17d;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#cards a {
+    display: block;
+    margin: 0;
+    background-color: rgb(72, 119, 60);
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 1em;
+    text-decoration: none;
+    max-width: 10em;
+    text-align: center;
+}
+
+.section_3_main img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.section_3_main h3 {
+    color: white;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #6ac17d;
+    text-align: end;
+}
+footer img{
+    max-width: 70px;
+    margin-left: 1em;
+    
+}
+ .parent div img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+
+/* TABLET */
+
+@media all and (min-width: 768px) {
+
+    .contenedor_2 {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .visible {
+        position: static;
+        display: block;
+    }
+
+    .desaparecer_2 {
+        position: absolute;
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 1em;
+        font-size: 1.1em;
+        padding: 0.5em 1.5em;
+        background-color: #6ac17d;
+        border-radius: 2em;
+    }
+
+    nav a {
+        width: 150px;
+        height: 60px;
+        border: 3px solid rgb(72, 119, 60);
+        border-radius: 45px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background-color: #6ac17d;
+        font-size: 1.2em;
+        font-weight: 550;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .section_2_main {
+        height: 50%;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .div2 {
+        grid-row-start: 2;
+    }
+
+    .div2 img {
+        height: 100em;
+    }
+
+    .div3 p {
+        color: white;
+        font-size: 1.8em;
+        margin-top: 2em;
+        text-align: start;
+        margin-left: 1em;
+    }
+
+    .div3 {
+        grid-row: span 2 ;
+    }
+
+    .div4 {
+        grid-column: span 2;
+    }
+
+    .div4 h2 {
+        margin-bottom: 1em;
+        color: white;
+        font-size: 2.2em;
+        text-align: start;
+    }
+
+    .div4 p {
+        color: white;
+        text-align: start;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+
+    }
+
+    .div6 {
+        grid-row-start: 4;
+        background-color: rgb(72, 119, 60);
+    }
+    #Titulo {
+        text-align: start;
+        font-size: 1.3em;
+    }
+
+    .caja_form {
+        border-radius: 50em;
+    }
+
+    .caja_form h3 {
+        font-size: 2em;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-height: 50em;
+        border-radius: 10em;
+    }
+
+    .formulario input,
+    select {
+        width: 30%;
+        height: 40%;
+        border: 1px solid black;
+        border-radius: 0.5em;
+    }
+
+    form Button {
+        width: 20%;
+        height: 40%;
+        border-radius: 2em;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2em;
+    }
+
+    #cards article {
+        background-color: #6ac17d;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #cards article:nth-of-type(1) {
+        grid-row: span 2 / span 2;
+    }
+
+    #cards article:nth-of-type(2) {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    #cards article:nth-of-type(3) {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    #cards article:nth-of-type(4) {
+        grid-row-start: 3;
+    }
+
+    #cards article:nth-of-type(5) {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    #cards img {
+        max-height:300px;
+    }
+    #cards article {
+        max-height: 700px;
+    }
+    #cards a {
+        font-size: 1em;
+        margin: 0;
+        margin-top: 1em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .visible2 {
+        position: static;
+        display: block;
+    }
+
+    header img {
+        width: 7em;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        padding: 0.5em 2em;
+        margin-right: 0;
+    }
+    nav a:hover {
+        background: rgb(72, 119, 60);
+        color: white;
+        font-size: 1.5em;
+        border: 3px solid #6ac17d;
+    }
+
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 500px);
+        margin: auto;
+    }
+
+
+    .div2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .div3 h3 {
+        font-size: 2em;
+    }
+
+    .div3 p {
+        color: rgb(255, 255, 255);
+        text-align: start;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .div4 p {
+        font-size: 1.3em;
+    }
+
+    .div5 {
+        grid-column-start: 3;
+    }
+
+    .div6 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    #cards article{
+        position: relative;
+    }
+    #cards img{
+        height: 300px;
+        max-height: 300px;
+    }
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2em;
+    }
+
+    #cards a {
+        font-size: 1em;
+        width: 90em;
+        border: 3px solid transparent;
+    }
+    #cards a:hover{
+        background-color: #6ac17d;
+        transition: 0.3s;
+        border-color: rgb(72, 119, 60);
+    }
+
+    #cards article:nth-of-type(1) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+    }
+
+    #cards article:nth-of-type(2) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+    }
+
+    #cards article:nth-of-type(3) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+    }
+
+    #cards article:nth-of-type(4) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    #cards article:nth-of-type(5) {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 4;
+        grid-row-start: 3;
+        ;
+    }
+
+    .contenedor_especial {
+        max-width: 60%;
+        font-size: 1.7em;
+        margin-bottom: 2em;
+    }
+
+
+
+    .contenedor_especial p {
+        font-size: 0.5em;
+        ;
+    }
+
+    .caja_form {
+        position: absolute;
+        top: 55em;
+        right: 5em;
+        max-height: 25em;
+        max-width: 40%;
+        font-size: 1em;
+        margin: 0;
+        border-radius: 2em;
+    }
+    .section_2_main article{
+        background-color: rgba(72, 119, 60, 0.808);
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        border-radius: 10em;
+        margin-top: 1em;
+        align-items: center;
+    }
+
+    .formulario button {
+        font-size: 1.8em;
+        width: 10em;
+        text-align: center;
+    }
+
+    .formulario input, select {
+        height: 10em;
+        width: 100%;
+    }
+    .visible3{
+        position: static;
+        padding: 1em;
+        padding-right: 7em;
+        display: block; 
+        background-color: rgb(72, 119, 60);
+        max-width: 100px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 1em;
+        border-radius: 0 2em 0 0;
+        box-shadow: 0em 10px 10px rgba(0, 0, 0, 0.774);
+    }
+    #cards article:hover{
+        transform: translateY(-1em);
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.43);
+    }
+}
